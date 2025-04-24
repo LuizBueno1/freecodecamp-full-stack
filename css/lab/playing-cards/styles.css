@@ -1,0 +1,65 @@
+body{
+    background-color: #116530;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#playing-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-15px) rotateY(10deg);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card.spades, .card.clubs {
+    color: #000;
+}
+
+.card.hearts, .card.diamonds {
+    color: #D40000;
+}
+
+.left{
+    display: flex;
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 80px;
+}
+
+.right{
+    display: flex;
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right > div {
+    transform: rotate(180deg);
+}
