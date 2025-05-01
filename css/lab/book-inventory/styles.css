@@ -1,0 +1,130 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+thead {
+    background-color: #1f2937;
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    color: #f9fafb;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+td {
+    padding: 16px;
+    font-size: 0.95rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+tbody tr:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(to bottom, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.1));
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to bottom, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.1));
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to bottom, rgba(245, 158, 11, 0.05), rgba(245, 158, 11, 0.1));
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.3));
+    color: #1e40af;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+tr[class="read"] span[class="status"] {
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    background-image: linear-gradient(to right, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.3));
+    color: #065f46;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    background-image: linear-gradient(to right, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.3));
+    color: #9a3412;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+span[class="status"], span[class^="rate"] {
+    height: 20px;
+    width: auto;
+    padding: 2px 6px;
+}
+
+span[class^="rate"] > span {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin: 0 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #e5e7eb;
+    display: inline-block;
+}
+
+span[class~="one"] > span:nth-child(1) {
+    background-image: linear-gradient(to bottom, #fbbf24, #d97706);
+    box-shadow: 0 0 4px rgba(251, 191, 36, 0.6);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+    background-image: linear-gradient(to bottom, #fbbf24, #d97706);
+    box-shadow: 0 0 4px rgba(251, 191, 36, 0.6);
+}
+
+span[class~="three"] > span {
+    background-image: linear-gradient(to bottom, #fbbf24, #d97706);
+    box-shadow: 0 0 4px rgba(251, 191, 36, 0.6);
+}
