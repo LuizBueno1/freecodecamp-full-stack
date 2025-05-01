@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Java Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#getting_started" class="nav-link">Getting Started</a>
+        <a href="#core_concepts" class="nav-link">Core Concepts</a>
+        <a href="#common_apis_and_libraries" class="nav-link">Common APIs and Libraries</a>
+        <a href="#best_practices" class="nav-link">Best Practices</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>
+                Java is a versatile, high-level programming language that is widely used across industries. Created in
+                1995, it allows developers to write code once and run it anywhere, thanks to the
+                <code>Java Virtual Machine</code> (JVM).
+            </p>
+            <p>
+                Its design emphasizes portability, security, and ease of use. Java applications are compiled into
+                <code>bytecode</code>,
+                enabling cross-platform execution without modifications.
+            </p>
+            <ul>
+                <li>Object-oriented: Promotes modularity and reuse.</li>
+                <li>Secure: Features like runtime checks prevent vulnerabilities.</li>
+                <li>Robust: Built-in garbage collection and exception handling.</li>
+                <li>Extensive ecosystem: Libraries and frameworks for all needs.</li>
+                <li>Widely adopted: A preferred choice for enterprise and Android apps.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="getting_started">
+            <header>Getting Started</header>
+            <p>
+                To begin, download and install the Java Development Kit (JDK). After installation, configure the
+                <code>JAVA_HOME</code>
+                environment variable and verify your setup by running <code>java -version</code> in the terminal. Below
+                is an example
+                of your first Java program:
+            </p>
+            <code class="code">
+                public class HelloWorld {<br>
+                    public static void main(String[] args) {<br>
+                        System.out.println("Hello, World!");<br>
+                    }<br>
+                }
+            </code>
+            <p>
+                Save this code as <code>HelloWorld.java</code>, compile it with <code>javac HelloWorld.java</code>, and
+                run it using
+                <code>java HelloWorld</code>. You should see the message <em>Hello, World!</em> printed to the console.
+            </p>
+        </section>
+        <section class="main-section" id="core_concepts">
+            <header>Core Concepts</header>
+            <p>
+                Java's foundation is its object-oriented programming principles. A <code>class</code> is a blueprint for
+                creating
+                objects, and encapsulation allows data hiding through access modifiers like <code>private</code>,
+                <code>protected</code>,
+                and <code>public</code>. Polymorphism enables methods to behave differently based on their parameters or
+                context.
+            </p>
+            <p>
+                Below is an example of exception handling:
+            </p>
+            <code class="code">
+                try {<br>
+                    int result = 10 / 0;<br>
+                } catch (ArithmeticException e) {<br>
+                    System.out.println("Cannot divide by zero!");<br>
+                }
+            </code>
+        </section>
+        <section class="main-section" id="common_apis_and_libraries">
+            <header>Common APIs and Libraries</header>
+            <p>
+                Java provides an extensive set of APIs and libraries. The <code>Collections Framework</code> includes
+                data structures
+                like <code>ArrayList</code>, <code>HashMap</code>, and <code>LinkedList</code>. For example, using an
+                ArrayList:
+            </p>
+            <code class="code">
+                import java.util.ArrayList;<br>
+                public class Main {<br>
+                    public static void main(String[] args) {<br>
+                        ArrayList<String> list = new ArrayList<>();<br>
+                        list.add("Java");<br>
+                        list.add("Python");<br>
+                        list.forEach(System.out::println);<br>
+                    }<br>
+                }
+            </code>
+            <p>
+                Other essential libraries include:
+            </p>
+            <ul>
+                <li><code>Streams API</code>: Functional-style operations for data processing.</li>
+                <li><code>JavaFX</code>: GUI application development.</li>
+                <li><code>Networking APIs</code>: Building client-server communication.</li>
+                <li><code>Concurrency Utilities</code>: Simplified multithreading.</li>
+                <li><code>JDBC</code>: Database connectivity and query execution.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="best_practices">
+            <header>Best Practices</header>
+            <p>
+                To write effective Java code, follow these best practices:
+            </p>
+            <ul>
+                <li>Use meaningful and consistent naming conventions for classes and methods.</li>
+                <li>Write modular code by dividing functionality into smaller, reusable methods.</li>
+                <li>Minimize dependencies to avoid over-complicating projects.</li>
+                <li>Use design patterns like Singleton and Factory where applicable.</li>
+                <li>Document your code using Javadoc for better maintainability.</li>
+            </ul>
+            <p>
+                By adhering to these principles, developers can create robust, efficient, and scalable Java
+                applications.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
