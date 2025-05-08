@@ -1,0 +1,85 @@
+:root {
+    --color0: #8B0000;
+    --color1: #D95030;
+    --color2: #FFD700;
+    --color3: #90EE90;
+    --color4: #32CD32;
+    --color5: #006400;
+
+    --solid-border: 2px solid #333333;
+    --dashed-border: 2px dashed #666666;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+td,
+th {
+    padding: 8px;
+    text-align: center;
+}
+
+.available-0 {
+    background-color: var(--color0);
+}
+
+.available-1 {
+    background-color: var(--color1);
+}
+
+.available-2 {
+    background-color: var(--color2);
+}
+
+.available-3 {
+    background-color: var(--color3);
+}
+
+.available-4 {
+    background-color: var(--color4);
+}
+
+.available-5 {
+    background-color: var(--color5);
+}
+
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-bottom: var(--dashed-border);
+}
+
+#legend {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#legend span {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+#legend-gradient {
+    width: 300px;
+    height: 20px;
+    background-image: linear-gradient(
+        to right,
+        var(--color0) 16%,
+        var(--color1) 16% 33%,
+        var(--color2) 33% 50%,
+        var(--color3) 50% 66%,
+        var(--color4) 66% 83%,
+        var(--color5) 83%
+    );
+    border-radius: 4px;
+}
