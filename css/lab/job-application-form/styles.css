@@ -101,18 +101,6 @@ button:hover {
     color: #1f2937;
 }
 
-.radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background-color: #f9fafb;
-    border-radius: 6px;
-    border: 1px solid #e5e7eb;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
 .radio-group input[type="radio"] {
     appearance: none;
     width: 20px;
@@ -148,7 +136,7 @@ label:has(input[type="radio"]:checked) {
     border-color: #bfdbfe;
 }
 
-input:nth-child(1) {
+input:first-of-type {
     border-radius: 8px;
     border-left: 4px solid #3b82f6;
 }
